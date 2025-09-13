@@ -28,63 +28,38 @@
             </div>
             </nav>
         </div>
+
         <!-- moviesname -->
         <div class="header">
-            <div class="lista-z">
-                <Button>0-9</Button>
-                <Button>A</Button>
-                <Button>B</Button>
-                <Button>C</Button>
-                <Button>D</Button>
-                <Button>E</Button>
-                <Button>F</Button>
-                <Button>G</Button>
-                <Button>H</Button>
-                <Button>I</Button>
-                <Button>J</Button>
-                <Button>K</Button>
-                <Button>L</Button>
-                <Button>M</Button>
-                <Button>N</Button>
-                <Button>O</Button>
-                <Button>P</Button>
-                <Button>Q</Button>
-                <Button>R</Button>
-                <Button>S</Button>
-                <Button>T</Button>
-                <Button>U</Button>
-                <Button>V</Button>
-                <Button>W</Button>
-                <Button>X</Button>
-                <Button>Y</Button>
-                <Button>Z</Button>
-            </div>
+            <div class="lista-z" id="letterButtons"> </div>
+            
+            <!-- Buttons -->
             <div class="moviesname">
                 <div class="mnames">
-                    <input type="button" value="Action">
-                    <input type="button" value="Adventure">
-                    <input type="button" value="Animation">
-                    <input type="button" value="Children">
-                    <input type="button" value="Comedy">
-                    <input type="button" value="Crime">
-                    <input type="button" value="Documentary">
-                    <input type="button" value="Drama">
-                    <input type="button" value="Family">
-                    <input type="button" value="Fantasy">
-                    <input type="button" value="Food">
-                    <input type="button" value="Home and Garden">
-                    <input type="button" value="Horror">
-                    <input type="button" value="Mini-Series">
-                    <input type="button" value="Mystery">
-                    <input type="button" value="News">
-                    <input type="button" value="Reality">
-                    <input type="button" value="Romance">
-                    <input type="button" value="Sci-Fic">
-                    <input type="button" value="Sport">
-                    <input type="button" value="Suspense">
-                    <input type="button" value="Talk Show">
-                    <input type="button" value="Thriller">
-                    <input type="button" value="Travel">
+                    <button class="input-Button" onclick="filterByGenre('Action')">Action </button>
+                    <button class="input-Button" onclick="filterByGenre('Adventure')">Adventure</button>
+                    <button class="input-Button" onclick="filterByGenre('Animation')">Animation</button>
+                    <button class="input-Button" onclick="filterByGenre('Children')">Children</button>
+                    <button class="input-Button" onclick="filterByGenre('Comedy')">Comedy</button>
+                    <button class="input-Button" onclick="filterByGenre('Crime')">Crime</button>
+                    <button class="input-Button" onclick="filterByGenre('Documentary')">Documentary</button>
+                    <button class="input-Button" onclick="filterByGenre('Drama')">Drama</button>
+                    <button class="input-Button" onclick="filterByGenre('Family')">Family</button>
+                    <button class="input-Button" onclick="filterByGenre('Fantasy')">Fantasy</button>
+                    <button class="input-Button" onclick="filterByGenre('Food')">Food</button>
+                    <button class="input-Button" onclick="filterByGenre('Home and Garden')">Home and Garden</button>
+                    <button class="input-Button" onclick="filterByGenre('Horror')">Horror</button>
+                    <button class="input-Button" onclick="filterByGenre('Mini-Series')">Mini-Series</button>
+                    <button class="input-Button" onclick="filterByGenre('Mystery')">Mystery</button>
+                    <button class="input-Button" onclick="filterByGenre('News')">News</button>
+                    <button class="input-Button" onclick="filterByGenre('Reality')">Reality</button>
+                    <button class="input-Button" onclick="filterByGenre('Romance')">Romance</button>
+                    <button class="input-Button" onclick="filterByGenre('Sci-Fic')">Sci-Fic</button>
+                    <button class="input-Button" onclick="filterByGenre('Sport')">Sport</button>
+                    <button class="input-Button" onclick="filterByGenre('Suspense')">Suspense</button>
+                    <button class="input-Button" onclick="filterByGenre('Talk Show')">Talk Show</button>
+                    <button class="input-Button" onclick="filterByGenre('Thriller')">Thriller</button>
+                    <button class="input-Button" onclick="filterByGenre('Travel')">Travel</button>
                 </div>
             </div>
         </div>
@@ -100,7 +75,7 @@
                     <!-- first row -->
 
                     <div class="row row-cols-1 row-cols-md-4 g-0">
-                        <div class="col">
+                        <div class="col" data-name="Game of Thrones" data-genre="Action">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/01.jpg" class="card-img-top" alt="01">
@@ -110,7 +85,7 @@
                             </a>
                         </div>
 
-                        <div class="col">
+                        <div class="col" data-name="Breaking Bad" data-genre="Crime">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/02.webp" class="card-img-top" alt="...">
@@ -119,7 +94,7 @@
                                 <span class="episodes">Episodes: 79</span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-name="Dexter" data-genre="Adventure">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/03.jpg" class="card-img-top" alt="...">
@@ -128,7 +103,7 @@
                                 <span class="episodes">Episodes: 125</span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-name="How I Met Your Mother" data-genre="Family">
                             <a href="detail.html" class="detalis">
 
                                 <div class="card">
@@ -142,7 +117,7 @@
 
                     <!-- 2nd row -->
                     <div class="row row-cols-1 row-cols-md-4 g-0">
-                        <div class="col">
+                        <div class="col" data-name="The Jungle" data-genre="Animation">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/05.jpg" class="card-img-top" alt="01">
@@ -151,7 +126,7 @@
                                 <span class="episodes">Episodes: 184</span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-name="Jumanji" data-genre="Mystery">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/06.webp" class="card-img-top" alt="...">
@@ -160,7 +135,7 @@
                                 <span class="episodes">Episodes: 78</span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-name="Bruce Almighty" data-genre="Sport">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/07.jpg" class="card-img-top" alt="...">
@@ -169,7 +144,7 @@
                                 <span class="episodes">Episodes: 60</span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-name="Glass Onion" data-genre="Fantasy">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/08.jpg" class="card-img-top" alt="...">
@@ -182,7 +157,7 @@
 
                     <!-- 3rd row -->
                     <div class="row row-cols-1 row-cols-md-4 g-0">
-                        <div class="col">
+                        <div class="col" data-name="Avengers" data-genre="Action">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/09.jpg" class="card-img-top" alt="01">
@@ -191,7 +166,7 @@
                                 <span class="episodes">Episodes: 04</span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-name="Narnia" data-genre="Adventure">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/10.jpg" class="card-img-top" alt="...">
@@ -200,7 +175,7 @@
                                 <span class="episodes">Episodes: 07</span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-name="Rob -B -Hooo" data-genre="Comedy">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/11.jpg" class="card-img-top" alt="...">
@@ -209,7 +184,7 @@
                                 <span class="episodes">Episodes: 14</span>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-name="The Big Green" data-genre="Home and Garden">
                             <a href="detail.html" class="detalis">
                                 <div class="card">
                                     <img src="assets/12.jpg" class="card-img-top" alt="...">
@@ -223,7 +198,7 @@
             </div>
         </div>
     </div>
-
+    <script src="JS/home.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,9 @@ body {
     background-color: aliceblue;
     height: 60px;
 }
+.hidden {
+    display: none !important;
+}
 
 .logo {
     background-color: yellow;
@@ -48,12 +51,13 @@ a {
 
 input {
     margin: 2px;
+    cursor: pointer;
     margin-bottom: 5px;
     font-size: 14px;
     border: none;
     border-radius: 5px;
     color: rgb(49, 49, 49);
-    /* background-color: #d2d3d4d3; */
+    background-color: #d2d3d4d3;
 }
 
 button {
@@ -62,6 +66,10 @@ button {
     margin-top: 10px;
 }
 
+#addtext {
+    border: 1px solid rgba(80, 79, 79, 0.442);
+    border-radius: 1px;
+}
 
 .gallary {
     width: 65%;
@@ -72,6 +80,9 @@ button {
 
 .col {
     text-align: center;
+    object-fit: cover;
+    display: inline-block;
+
 }
 
 .cardforgallary {
@@ -189,13 +200,21 @@ h6 {
     border-radius: 1px;
 }
 
+
 #cardforadd {
-    width: 70%;
+    width: 60%;
     background-color: rgba(249, 249, 255, 0.934);
     margin: 50px auto;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.262);
     border-radius: 1px;
     /* padding: 20px; */
+}
+
+#add {
+    border-radius: 3px;
+    width: 70px;
+    font-size: larger;
+    font-weight: 500;
 }
 
 .card-log {
@@ -238,7 +257,7 @@ hr {
     background-color: #f0f8ff;
 }
 
-#signup-page {
+#signupBtn {
     border-radius: 1px;
 }
 
@@ -248,4 +267,8 @@ hr {
     margin-bottom: 5px;
     /* height: 0px; */
     margin-left: 10px;
+}
+
+i {
+    background-color: transparent;
 }

@@ -17,7 +17,6 @@
             <a href="index.html">Home</a>
             <a href="add.html" class="action">Add</a>
         </div>
-
         <div class="login">
             <a href="login.html">Login</a>
             <a href="signup.html">Sign up</a>
@@ -26,12 +25,15 @@
 
     <div class="card" id="cardforadd">
         <div class="card-header">
-            <b>ADD TV SHOW</b>
+            <span style="font-weight: 800;"><b>ADD TV SHOW</b></span>
         </div>
         <div class="card-body">
-            <h5 class="card-title"> Name</h5>
-            <input type="text" name="" id="" class="tvshow-name" placeholder="Enter TV show name">
-            <input type="button" class="btn btn-primary" value="Add">
+            <h5 class="card-title" style="font-weight:600;">Name</h5>
+            <form id="addform">
+                <input type="text" id="addtext" class="form-control p-4" placeholder="Enter TV show name" />
+                <div class="output" id="output"></div>
+                <input type="submit" class="btn btn-primary mt-3" id="add" value="Add" />
+            </form>
         </div>
     </div>
 
