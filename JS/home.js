@@ -14,7 +14,7 @@ function filterByLetter(letter) {
     show.classList.toggle("hidden", !name.startsWith(letter));
   });
 }
-
+e
 function filterByGenre(genre) {
   const shows = document.querySelectorAll(".col");
   shows.forEach((show) => {
